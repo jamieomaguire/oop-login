@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+  padding: 1em;
+  border: 1px solid #ccc;
+  flex-basis: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+footer {
+  padding: 1em;
+  background-color: hsl(.98, 72%, 56%);
+  color: #fff;
+  flex-basis: 50px;
+}
+
+main {
+  flex: 1; 
+  display: flex;
+  align-items: stretch;
+}
+
+.page {
+  width: 100%;
+  padding: 1em;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-heading {
+  font-weight: 100;
+  margin:0;
+}
+
+h2, h3 {
+  font-weight: 100;
+}
+
+.log-in-btn, .log-out-btn {
+  border: none;
+  background-color: hsl(.98, 72%, 56%);
+  padding: .5em 1em;
+  border-radius: 2em;
+  transition: all 300ms ease-out;
+  color: white;
+  cursor: pointer;
+}
+
+.log-in-btn:hover,
+.log-in-btn:focus,
+.log-out-btn:hover,
+.log-out-btn:focus {
+  background-color: hsl(.98, 72%, 46%);
+  color: white;
+}
+
+
+.log-in-form {
+  width: 30%;
+  min-width: 300px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: 1px solid #ccc;
+  padding: .5em 1em;
+  border-radius: 2em;
+  background-color: none;
+}
+
+.log-in-form > p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #eee inset;
+}
