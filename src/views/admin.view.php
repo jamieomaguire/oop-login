@@ -19,15 +19,4 @@
   <p>Email Address: <?= $loggedUser->getProperty('email'); ?></p>
   <p>Joined: <?= $loggedUser->formatJoined(); ?></p>
 
-  <!--<?php
-
-    $serialized = $_SESSION['loggedUser'];
-    echo "Encoded :";
-    var_dump( $serialized);
-
-    $unserialized = unserialize($serialized);
-    echo "Decoded: ";
-    var_dump($unserialized);
-  
-  ?>-->
 </div>

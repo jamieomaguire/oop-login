@@ -36,10 +36,6 @@ class Authenticate {
 
   }
 
-
-
-
-
   private static function login(User $fetchedUser)
   {
 

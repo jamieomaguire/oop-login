@@ -13,13 +13,7 @@ class User {
     'joined' => '',
     'email' => ''
   ];
-  // public $id;
-  // public $username;
-  // protected $hashed_password;
-  // protected $first_name;
-  // protected $last_name;
-  // protected $joined;
-  // protected $email;
+
   public $loggedIn = false;
 
   public function __construct(array $userAttributes = [])
